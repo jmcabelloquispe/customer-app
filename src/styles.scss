@@ -1,0 +1,30 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0 auto;
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+input {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.mat-input-element {
+  color: #005DAA;
+}
+
+.mat-form-field-label {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.mat-focused .mat-form-field-label {
+  // color: #005DAA !important;
+}
+
+.mat-form-field-ripple {
+  // background-color: #005DAA !important;
+}
+
+table {
+  font-family: 'Work Sans', sans-serif !important;
+}

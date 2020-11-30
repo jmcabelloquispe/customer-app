@@ -1,0 +1,20 @@
+<div class="customer-info">
+  <form [formGroup]="customer.info" class="customer-info__container"> 
+    <mat-form-field >
+      <input matInput placeholder="Nombre" formControlName="name" readonly>
+    </mat-form-field>
+    <mat-form-field >
+      <input matInput placeholder="Apellido" formControlName="lastName" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput id='age' placeholder="Edad" formControlName="age" readonly >
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Fecha de Nacimiento" formControlName="birthdate" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Fecha de probable de muerte" formControlName="deathDate" readonly>
+    </mat-form-field>
+  </form>
+</div>
+

@@ -1,0 +1,27 @@
+<div class="customer-form">
+    <form [formGroup]="customer.form" class="customer-form__container" (submit)="onSubmit()"> 
+      <input type="hidden" formControlName="id">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Nombre" formControlName="name" >
+        <mat-error>Campo requerido</mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Apellido" formControlName="lastName" >
+        <mat-error>Campo requerido</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" id='age' placeholder="Edad" formControlName="age" >
+        <mat-error *ngIf="customer.form.controls['age'].errors?.min">Mínimo 1</mat-error>
+        <mat-error *ngIf="customer.form.controls['age'].errors?.max">Máximo 100</mat-error>
+        <mat-error *ngIf="customer.form.controls['age'].errors?.required">Campo requerido</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="date" placeholder="Fecha de Nacimiento" formControlName="birthdate" >
+        <mat-error>Campo requerido</mat-error>
+      </mat-form-field>
+      <button mat-flat-button color="primary" type="submit">
+        Guardar
+      </button>
+  </form>
+</div>
+
