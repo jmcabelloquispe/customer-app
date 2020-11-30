@@ -65,7 +65,7 @@ export class CustomerService {
         age: customer.age,
         birthdate: this.datePipe.transform(customer.birthdate, 'yyyy-MM-dd'),
         // se calcula sobre la esperanza de vida mundial 72
-        deathDate : this.datePipe.transform(deathDate.setFullYear(deathDate.getFullYear() + 1), 'yyyy-MM-dd')
+        deathDate : this.datePipe.transform(deathDate.setFullYear(deathDate.getFullYear() + 72), 'yyyy-MM-dd')
       }
     );
   }
